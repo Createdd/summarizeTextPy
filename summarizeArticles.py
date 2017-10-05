@@ -87,4 +87,4 @@ for cluster in range(3):
     unique=set(keywords[cluster])-keys_other_clusters
     uniqueKeys[cluster]=nlargest(10, unique, key=counts[cluster].get)
 
-uniqueKeys
+print(uniqueKeys)
